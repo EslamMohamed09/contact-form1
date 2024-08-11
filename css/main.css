@@ -1,0 +1,203 @@
+* {margin:0;padding:0;
+    text-transform:capitalize;
+    text-decoration:none !important;
+    outline:none !important;
+    list-style:none;
+    transition:all .2s linear;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;}
+
+.container {margin:0 auto;}
+
+
+:root {--primary-color:#cca061;
+       --primary-color1:#ffc05e;
+       --primary-color2:#754501;
+       --primary-color3:rgb(58, 35, 1);
+       --primary-color4:#e0a33f;
+
+       --box-shadow:0 0 .5rem #090a0a7a;
+       --box-shadow2:0 .5rem 1.5rem #0d2e2e23;
+       --box-shadow3:0 .3rem 4rem #252c2c2f;
+       --box-shadow4:0 0 4px #000;
+       --box-shadow5:0 0 3px #eee;
+       --box-shadow6:0 0 5px rgb(218, 217, 217);
+       --text-shadow:0 0 5px rgb(5, 5, 5);
+       --text-shadow2:0 0 4px #fff;}
+
+body {overflow-x:hidden;}
+
+::-webkit-scrollbar {width:8px;}
+
+::-webkit-scrollbar-thumb {background-image:linear-gradient(125deg, #493cfb 0%, #ffc05e 100%);
+                           border-radius:10px;}
+
+*::selection {background:#754501;
+              color:#fff;}
+
+/* #+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+# */
+.heading-section {padding-top:4rem;
+                  text-align:center;}
+
+.sec-title {padding-bottom:1rem;
+            font-weight:900;
+            text-align:center;
+            text-shadow:var(--text-shadow);
+            color:#eee;}
+
+.heading-section .sub-title {color:#eee !important;
+                             text-shadow:var(--text-shadow);
+                             text-align:center;
+                             width:50%;
+                             margin:auto;
+                             line-height:1.8rem;
+                             font-size:1rem;}
+
+
+
+
+/************************ 
+  # Contact Us
+*************************/
+.contactus .heading-section .sub-title {color:#eee;
+                                        text-shadow:var(--text-shadow);}
+
+.contactus {min-height:100vh;
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            z-index:0;
+            position:relative;}
+
+.contactus .overlay {position:absolute;
+                     top:0;bottom:0;
+                     left:0;right:0;
+                     content:"";
+                     background:#000;
+                     z-index:-1;
+                     opacity:0.6;}
+
+.contactus .container {width:100%;
+                       display:flex;
+                       justify-content:center;
+                       align-items:center;
+                       flex-wrap:wrap;
+                       margin-top:3rem;}
+
+.contactus .contactInfo {flex:1 1 30rem;
+                         display:flex;
+                         flex-direction:column;}
+
+.contactus .contactInfo .box {position:relative;
+                              padding:1.5rem 0;
+                              margin-bottom:1rem;
+                              display:flex;}
+
+.contactus .contactInfo .box .icon {background-color:#000;
+                                    box-shadow:var(--box-shadow);
+                                    color:var(--primary-color1);
+                                    width:2.5rem;
+                                    height:2.5rem;
+                                    display:flex;
+                                    justify-content:center;
+                                    align-items:center;
+                                    border-radius:50%;
+                                    margin-right:0.7rem;}
+
+.contactus .contactInfo .box .text h3 {color:#e0a33f;
+                                       font-size:1.4rem;
+                                       text-shadow:var(--text-shadow);
+                                       font-weight:bold;}
+
+.contactus .contactInfo .box .text p {color:#eee;
+                                      font-weight:bold;
+                                      font-size:1rem;
+                                      text-shadow:var(--box-shadow);}
+
+
+.contactus form {flex:1 1 30rem;
+                 justify-content:center;
+                 align-items:center;
+                 background-color:#000;
+                 box-shadow:var(--box-shadow);
+                 opacity:0.9;
+                 padding:1rem 1.5rem;}
+
+.contactus form h2 {font-size:1.7rem;
+                    text-align:center;
+                    font-weight:bold;
+                    color:#fff;
+                    text-shadow:var(--box-shadow2);
+                    margin-bottom:2rem;}
+
+.contactus form .inputGroup {position:relative;
+                             margin-bottom:2rem;
+                             width:100%;}
+
+.contactus form .inputGroup input,
+.contactus form .inputGroup textarea {padding:0.3rem 0.5rem;
+                                      font-size:1.1rem;
+                                      color:#fff;
+                                      width:100%;
+                                      border:none;
+                                      outline:none;
+                                      border-bottom:1px solid #fff;
+                                      background-color:transparent;
+                                      transition:all 0.3s linear;}
+
+.contactus form .inputGroup label {color:#fff;
+                                   position:absolute;
+                                   top:3px;
+                                   left:0;
+                                   padding:0.3rem 0.5rem;
+                                   font-size:1rem;
+                                   transition:all 0.3s linear;}
+
+.contactus form .inputGroup textarea {resize:none;
+                                      height:8rem;}
+
+.contactus form .inputGroup button[type="submit"] {width:100%;
+                                                   padding:0.3rem 1rem;
+                                                   margin-top:2rem;
+                                                   font-weight:bold;
+                                                   outline:none;
+                                                   color:#fff;
+                                                   background-color:var(--primary-color4);
+                                                   border:1px solid var(--primary-color4);
+                                                   text-transform:uppercase;
+                                                   transition:all 0.3s linear;
+                                                   position:relative;}
+
+.contactus form .inputGroup button[type="submit"] .fa-paper-plane {position:absolute;
+                                                                   top:50%;
+                                                                   transform:translateY(-50%);
+                                                                   margin-left:0.5rem;
+                                                                   transition:all 0.3s linear;}
+
+.contactus form .inputGroup button[type="submit"]:hover {background-color:transparent;
+                                                         color:#e0a33f;}                                           
+
+.contactus form .inputGroup button[type="submit"]:hover .fa-paper-plane {margin-left:1.4rem;}
+
+
+.contactus form .inputGroup input:focus ~ label,
+.contactus form .inputGroup input:valid ~ label,
+.contactus form .inputGroup textarea:focus ~ label,
+.contactus form .inputGroup textarea:valid ~ label {top:-1.7rem;
+                                                    color:#e0a33f;
+                                                    font-size:0.9rem;}
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    html {font-size:80%;}
+
+}
+
+
